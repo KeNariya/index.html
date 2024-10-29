@@ -30,6 +30,9 @@
         <p>Using these two buttons we can make x go up by 1 or down by 1</p>
         <button type="button" onclick="incX()">+</button>
         <button type="button" onclick="decX()">-</button>
+        <p>Using these two buttons we can make x go up by 5 or down by 5</p>
+        <button type="button" onclick="incXBy5()">+5</button>
+        <button type="button" onclick="decXBy5()">-5</button>
     </body>
     <script>
         var x = 500;
@@ -40,6 +43,14 @@
         }
         function decX() {
             x--;
+            document.getElementById('assignment').innerHTML = x;
+        }
+        function incXBy5() {
+            x += 5;
+            document.getElementById('assignment').innerHTML = x;
+        }
+        function decXBy5() {
+            x -= 5;
             document.getElementById('assignment').innerHTML = x;
         }
     </script>
